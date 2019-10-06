@@ -19,4 +19,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, KatalogBajuActivity.class);
         startActivity(intent);
     }
+
+    public void handlerClickKatalogTotebag(View view)
+    {
+        Intent intent = new Intent(this, KatalogTotebagActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleExit(View view) { finish(); }
 }
