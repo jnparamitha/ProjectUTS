@@ -1,8 +1,12 @@
 package id.ac.polinema.projectuts;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.View;
+
+import id.ac.polinema.projectuts.fragments.KatalogWomenFragment;
 
 public class KatalogBajuActivity extends AppCompatActivity {
 
@@ -10,5 +14,18 @@ public class KatalogBajuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_katalog_baju);
+    }
+
+    public void handlerClickWomen(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        KatalogWomenFragment katalogWomenFragment = (KatalogWomenFragment) getSupportFragmentManager().findFragmentByTag("KATALOG_WOMEN_FRAGMENT");
+        if (katalogWomenFragment != null && katalogWomenFragment.isVisible()) {
+            fragmentTransaction.commit();
+        } else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.KatalogBaju, new KatalogWomenFragment(), "KATALOG_WOMEN_FRAGMENT");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
 }
