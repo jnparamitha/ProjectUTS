@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 
+import id.ac.polinema.projectuts.fragments.KatalogMenFragment;
 import id.ac.polinema.projectuts.fragments.KatalogWomenFragment;
 
 public class KatalogTotebagActivity extends AppCompatActivity {
