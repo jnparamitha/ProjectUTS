@@ -20,11 +20,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void handlerClickKatalogTotebag(View view)
-    {
-        Intent intent = new Intent(this, KatalogTotebagActivity.class);
-        startActivity(intent);
-    }
-
     public void handleExit(View view) { finish(); }
 }
