@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import id.ac.polinema.projectuts.activities.KatalogBajuActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void handleExit(View view) { finish(); }
+    public void handleExit(View view) {
+        finish(); }
 }

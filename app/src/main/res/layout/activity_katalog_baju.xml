@@ -5,7 +5,8 @@
     android:id="@+id/KatalogBaju"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KatalogBajuActivity">
+    android:background="@android:color/background_light"
+    tools:context=".activities.KatalogBajuActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -18,7 +19,8 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/project"
         android:onClick="handlerClickWomen"
         android:text="women"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -30,7 +32,8 @@
         android:id="@+id/button5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
         android:onClick="handlerClickMen"
         android:text="men"
         app:layout_constraintEnd_toEndOf="parent"

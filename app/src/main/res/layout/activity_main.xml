@@ -23,8 +23,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/alegreya_sans_sc_bold"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/montserrat"
         android:text="KATALOG JEEYSHOP"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="300dp" />
+        app:layout_constraintGuide_begin="365dp" />
 
     <ImageView
         android:id="@+id/imageView"

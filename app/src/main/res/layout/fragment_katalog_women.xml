@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context=".fragments.KatalogWomenFragment">
 
     <androidx.constraintlayout.widget.Guideline
@@ -18,50 +19,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.56" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <ImageView
-        android:onClick="handleBaju1"
         android:id="@+id/imageView2"
         android:layout_width="221dp"
         android:layout_height="249dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
+        android:onClick="handleBaju1"
         android:src="@mipmap/baju1"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="OnClick" />
 
     <ImageView
-        android:onClick="handleBaju2"
         android:id="@+id/imageView3"
-        android:layout_width="228dp"
-        android:layout_height="251dp"
+        android:layout_width="207dp"
+        android:layout_height="241dp"
+        android:onClick="handleBaju2"
         android:src="@mipmap/baju2"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
+        app:layout_constraintVertical_bias="0.821"
+        tools:ignore="OnClick" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="204dp"
         android:layout_height="225dp"
+        android:onClick="handleBaju3"
         android:src="@mipmap/baju3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:ignore="OnClick" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="199dp"
         android:layout_height="212dp"
+        android:onClick="handleBaju4"
         android:src="@mipmap/baju4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.47"
+        tools:ignore="OnClick" />
 
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:background="@android:color/background_light"
+        android:onClick="handleBack2"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
